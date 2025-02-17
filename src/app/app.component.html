@@ -1,16 +1,17 @@
-<app-add-task *ngIf="isDestroyed"></app-add-task>
-<app-list-task></app-list-task>
-<div>
-  {{countDown}}
-</div>
-<router-outlet />
-
-<!DOCTYPE html>
-<html lang="en">
 <head>
   <title>practice</title>
 </head>
 <body>
-  <h1 class="h1">My first project ng</h1>
+  <div appCanvasWatermark>
+  <h1 class="h1" appCanvasWatermark>My first project ng</h1>
+  </div>
 </body>
-</html>
+
+<app-add-task *ngIf="isDestroyed"></app-add-task>
+<app-list-task></app-list-task>
+<div >
+  {{countDown}}
+</div>
+<router-outlet />
+
+

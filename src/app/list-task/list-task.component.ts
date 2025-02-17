@@ -13,7 +13,7 @@ export class ListTaskComponent implements OnInit, AfterViewInit {
   constructor() {
     let nombre = prompt('ingrese su nombre');
     alert(nombre);
-    console.log('finaliza el constr');
+    console.log('finaliza el constr list task');
   }
   ngAfterViewInit(): void {
     console.log(
